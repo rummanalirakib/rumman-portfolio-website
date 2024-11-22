@@ -4,8 +4,8 @@ import Myself from '../../assets/rumman_profile.jpg'
 
 const CTA = () => {
   return (
-    <div classname="cta">
-      <a href={RESUME} download className='btn'>Download CV</a>
+    <div className="cta">
+      <a className='btn' download href={RESUME}>Download CV</a>
       <a href="#contact" className='btn btn-primary'>Let's Talk</a>
       {/* <a href={RESUME} target="_blank" rel="noopener noreferrer">View My Resume</a> */}
       <div className="me">

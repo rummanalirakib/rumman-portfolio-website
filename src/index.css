@@ -44,6 +44,7 @@ body {
 .container {
     width: var(--container-width-lg);
     margin: 0 auto;
+    text-align: center;
 }
 
 h1, h2, h3, h4, h5 {
@@ -56,6 +57,7 @@ h1 {
 
 section {
     margin-top: 8rem;
+    height: 100vh;
 }
 
 section > h2, section > h5 {
@@ -101,6 +103,7 @@ a:hover {
 .btn-primary {
     background: var(--color-primary);
     color: var(--color-bg);
+    margin: 0.5rem;
 }
 
 img {
