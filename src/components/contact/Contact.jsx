@@ -3,15 +3,17 @@ import './Contact.css'
 import { SiMinutemailer } from "react-icons/si"
 import { AiFillMessage } from "react-icons/ai"
 import { FaWhatsapp } from "react-icons/fa"
-import { useRef } from 'react';
+import { useRef } from 'react'
 import emailjs from 'emailjs-com'
 
 const Contact = () => {
   const form = useRef(null);
   const sendEmail = (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
     emailjs.sendForm('service_nm52jyb', 'template_8jgzip9', form.current, 'RA11D5NllhaYzOxIP')
+
+    e.target.reset()
   };
 
   return (
