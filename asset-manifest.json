@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/rumman-portfolio-website/static/css/main.16646a27.css",
+    "main.js": "/rumman-portfolio-website/static/js/main.7ca95a58.js",
+    "static/media/DLD Simulator.png": "/rumman-portfolio-website/static/media/DLD Simulator.b13b0fd6c9835e366f38.png",
+    "static/media/rumman_profile.jpg": "/rumman-portfolio-website/static/media/rumman_profile.30361da7a077fb01fb78.jpg",
+    "static/media/resume.pdf": "/rumman-portfolio-website/static/media/resume.34fac75be82725b35b11.pdf",
+    "static/media/jahid_hasan.jpg": "/rumman-portfolio-website/static/media/jahid_hasan.96b56ccbabd053206be1.jpg",
+    "static/media/sifat_rabbi.jpg": "/rumman-portfolio-website/static/media/sifat_rabbi.c07631586a56f84c628c.jpg",
+    "static/media/jaber_siam.jpg": "/rumman-portfolio-website/static/media/jaber_siam.0842ff52a9503fe84cb6.jpg",
+    "static/media/Ibtesham_afrin.jpg": "/rumman-portfolio-website/static/media/Ibtesham_afrin.08520963873574047ce6.jpg",
+    "static/media/bg-texture.png": "/rumman-portfolio-website/static/media/bg-texture.bb77e49ff83871a78f30.png",
+    "index.html": "/rumman-portfolio-website/index.html",
+    "main.16646a27.css.map": "/rumman-portfolio-website/static/css/main.16646a27.css.map",
+    "main.7ca95a58.js.map": "/rumman-portfolio-website/static/js/main.7ca95a58.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.16646a27.css",
+    "static/js/main.7ca95a58.js"
+  ]
+}
