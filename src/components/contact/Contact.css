@@ -54,6 +54,10 @@ input, textarea {
   color: var(--color-white);
 }
 
+.font_size_0_7 {
+  font-size: 0.7rem;
+}
+
 
 /*** Media Queries (Medium Devices) **** */
 

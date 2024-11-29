@@ -1,11 +1,11 @@
 import React from 'react'
 import './Portfolio.css'
-import IMG1 from '../../assets/DLD Simulator.png'
-import IMG2 from '../../assets/DLD Simulator.png'
-import IMG3 from '../../assets/DLD Simulator.png'
-import IMG4 from '../../assets/DLD Simulator.png'
-import IMG5 from '../../assets/DLD Simulator.png'
-import IMG6 from '../../assets/DLD Simulator.png'
+import IMG1 from '../../assets/DLD Simulator.jpg'
+import IMG2 from '../../assets/mazegame.jpg'
+import IMG3 from '../../assets/onlineexam.jpg'
+import IMG4 from '../../assets/foodfinder.jpg'
+import IMG5 from '../../assets/magnificientcoxbazar.jpg'
+import IMG6 from '../../assets/bookstore.jpg'
 
 const data = [
   {
@@ -17,32 +17,32 @@ const data = [
   {
     id: 2,
     image: IMG2,
-    title: 'Digital Logic Design Simulator',
-    github: 'https://github.com/rummanalirakib/Digital-Logic-Design-Simulator'
+    title: 'Maze Game',
+    github: 'https://github.com/rummanalirakib/Maze-Runner'
   },
   {
     id: 3,
     image: IMG3,
-    title: 'Digital Logic Design Simulator',
-    github: 'https://github.com/rummanalirakib/Digital-Logic-Design-Simulator'
+    title: 'Online Practice Exam',
+    github: 'https://github.com/rummanalirakib/OnlineExam'
   },
   {
     id: 4,
     image: IMG4,
-    title: 'Digital Logic Design Simulator',
-    github: 'https://github.com/rummanalirakib/Digital-Logic-Design-Simulator'
+    title: 'Restaurant Finder',
+    github: 'https://github.com/rummanalirakib/FoodFinder'
   },
   {
     id: 5,
     image: IMG5,
-    title: 'Digital Logic Design Simulator',
-    github: 'https://github.com/rummanalirakib/Digital-Logic-Design-Simulator'
+    title: 'Magnificient Coxsbazar',
+    github: 'https://github.com/rummanalirakib/MagnificientCoxsBazar'
   },
   {
     id: 6,
     image: IMG6,
-    title: 'Digital Logic Design Simulator',
-    github: 'https://github.com/rummanalirakib/Digital-Logic-Design-Simulator'
+    title: 'Book Store Management System',
+    github: 'https://github.com/rummanalirakib/BookStore'
   }
 ]
 

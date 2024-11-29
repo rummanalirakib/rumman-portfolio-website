@@ -1,6 +1,6 @@
 .about__container {
   display: grid;
-  grid-template-columns: 35% 50%;
+  grid-template-columns: 35% 60%;
   gap: 15%;
 }
 
@@ -25,16 +25,16 @@
 }
 
 .about__cards {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  gap: 1.5rem; */
 }
 
 .about__card {
-  background: var(--color-bg-variant);
+  /* background: var(--color-bg-variant); */
   border: 1px solid transparent;
   border-radius: 1rem;
-  padding: 2rem;
+  /* padding: 2rem; */
   text-align: center;
 }
 
@@ -66,6 +66,10 @@
 
 .d-flex {
   display: flex;
+}
+
+.time__period {
+  padding-left: 2rem;
 }
 
 /*** Media Queries (Medium Devices) **** */
