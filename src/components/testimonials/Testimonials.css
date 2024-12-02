@@ -12,7 +12,8 @@
 }
 
 .testimonial {
-  background: var(--color-bg-variant);
+  /* background: var(--color-bg-variant); */
+  background: #142833;
   text-align: center;
   padding: 2rem;
   border-radius: 2rem;
@@ -20,7 +21,8 @@
 }
 
 .reviewer_review {
-  color: var(--color-light);
+  /* color: var(--color-light); */
+  color: white;
   font-weight: 300;
   display: block;
   width: 80%;

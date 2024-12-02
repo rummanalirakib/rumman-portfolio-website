@@ -1,7 +1,7 @@
 .container.contact__container {
   width: 58%;
   display: grid;
-  grid-template-columns: 30% 58%;
+  grid-template-columns: 38% 58%;
   gap: 12%
 }
 
@@ -12,7 +12,8 @@
 }
 
 .contact__option {
-  background: var(--color-bg-variant);
+  /* background: var(--color-bg-variant); */
+  background: #142833;
   padding: 1.2rem;
   border-radius: 1.2rem;
   text-align: center;
@@ -49,13 +50,26 @@ input, textarea {
   padding: 1.5rem;
   border-radius: 0.5rem;
   background: transparent;
-  border: 2px solid var(--color-primary-variant);
+  /* border: 2px solid var(--color-primary-variant); */
+  border: 2px solid #80a61f;
   resize: none;
   color: var(--color-white);
 }
 
-.font_size_0_7 {
+.location__styling {
+  display: grid;
   font-size: 0.7rem;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.grid-wise {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.margin_bottom_1 {
+  margin-bottom: 1rem;
 }
 
 

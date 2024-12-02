@@ -12,7 +12,7 @@ header {
 
 .cta {
   margin-top: 2.5rem;
- /* display: flex; */
+  /* display: flex; */
   gap: 1.2rem;
   justify-content: center;
 }
@@ -31,7 +31,8 @@ header {
   content: '';
   width: 1px;
   height: 2rem;
-  background: var(--color-primary);
+  /* background: var(--color-primary); */
+  background: #80a61f;
 }
 
 /* ******* ME ***** */
@@ -67,12 +68,31 @@ header {
   header {
     height: 68vh;
   }
+
+  .header__socials {
+    bottom: 8rem;
+    left: 23%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .header__socials {
+    bottom: 27rem;
+    left: 23%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .header__socials {
+    bottom: 15rem;
+    left: 23%;
+  }
 }
 
 /*** Media Queries (Small Devices) **** */
 @media screen and (max-width: 600px) {
   header {
-      height: 100vh;
+    height: 100vh;
   }
 
   .header__socials,
