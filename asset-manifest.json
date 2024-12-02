@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/rumman-portfolio-website/static/css/main.651bb7f4.css",
-    "main.js": "/rumman-portfolio-website/static/js/main.9d0796e8.js",
+    "main.js": "/rumman-portfolio-website/static/js/main.950189c7.js",
     "static/media/mazegame.jpg": "/rumman-portfolio-website/static/media/mazegame.6fd563372f18b0f3787e.jpg",
     "static/media/DLD Simulator.jpg": "/rumman-portfolio-website/static/media/DLD Simulator.bad413633a969635dd44.jpg",
     "static/media/foodfinder.jpg": "/rumman-portfolio-website/static/media/foodfinder.8e79e38b006eca57233a.jpg",
@@ -9,7 +9,7 @@
     "static/media/onlineexam.jpg": "/rumman-portfolio-website/static/media/onlineexam.3892bf9fb6c6a7d71dc0.jpg",
     "static/media/rumman_profile.jpg": "/rumman-portfolio-website/static/media/rumman_profile.30361da7a077fb01fb78.jpg",
     "static/media/magnificientcoxbazar.jpg": "/rumman-portfolio-website/static/media/magnificientcoxbazar.b2faae2e649d8d73c169.jpg",
-    "static/media/resume.pdf": "/rumman-portfolio-website/static/media/resume.34fac75be82725b35b11.pdf",
+    "static/media/resume.pdf": "/rumman-portfolio-website/static/media/resume.8ea067a71a221c4b23a5.pdf",
     "static/media/jahid_hasan.jpg": "/rumman-portfolio-website/static/media/jahid_hasan.96b56ccbabd053206be1.jpg",
     "static/media/sifat_rabbi.jpg": "/rumman-portfolio-website/static/media/sifat_rabbi.c07631586a56f84c628c.jpg",
     "static/media/jaber_siam.jpg": "/rumman-portfolio-website/static/media/jaber_siam.0842ff52a9503fe84cb6.jpg",
@@ -33,10 +33,10 @@
     "static/media/mysql.svg": "/rumman-portfolio-website/static/media/mysql.c88570bcc45e4d15aa2b92e17eef91dd.svg",
     "index.html": "/rumman-portfolio-website/index.html",
     "main.651bb7f4.css.map": "/rumman-portfolio-website/static/css/main.651bb7f4.css.map",
-    "main.9d0796e8.js.map": "/rumman-portfolio-website/static/js/main.9d0796e8.js.map"
+    "main.950189c7.js.map": "/rumman-portfolio-website/static/js/main.950189c7.js.map"
   },
   "entrypoints": [
     "static/css/main.651bb7f4.css",
-    "static/js/main.9d0796e8.js"
+    "static/js/main.950189c7.js"
   ]
 }
