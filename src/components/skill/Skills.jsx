@@ -1,6 +1,116 @@
 import React from "react";
 import "./Skills.css";
-import { FaCheckCircle } from "react-icons/fa";
+import csharp from "../../assets/CSharp.jpg";
+import docker from "../../assets/docker.png";
+import git from "../../assets/git.png";
+import html5 from "../../assets/html5.png";
+import aws from "../../assets/aws.png";
+import azure from "../../assets/azure.png";
+import cplus from "../../assets/cplus.jpg";
+import css from "../../assets/css.png";
+import javaScript from "../../assets/javascript.png";
+import jira from "../../assets/jira.png";
+import mysql from "../../assets/mysql.svg";
+import mssql from "../../assets/mssql.png";
+import python from "../../assets/python.png";
+import react from "../../assets/react.png";
+import sourcetree from "../../assets/sourcetree.png";
+import java from "../../assets/java.png";
+import php from "../../assets/php.png";
+import django from "../../assets/django.png";
+
+const skillLogo = [
+  {
+    logo: csharp,
+    title: "C#",
+    experience: "Experienced",
+  },
+  {
+    logo: docker,
+    title: "Docker",
+    experience: "Intermediate",
+  },
+  {
+    logo: git,
+    title: "Git",
+    experience: "Experienced",
+  },
+  {
+    logo: html5,
+    title: "HTML5",
+    experience: "Experienced",
+  },
+  {
+    logo: css,
+    title: "CSS3",
+    experience: "Experienced",
+  },
+  {
+    logo: aws,
+    title: "AWS",
+    experience: "Intermediate",
+  },
+  {
+    logo: azure,
+    title: "AZURE",
+    experience: "Intermediate",
+  },
+  {
+    logo: cplus,
+    title: "C++",
+    experience: "Experienced",
+  },
+  {
+    logo: javaScript,
+    title: "JavaScript",
+    experience: "Experienced",
+  },
+  {
+    logo: jira,
+    title: "Jira",
+    experience: "Experienced",
+  },
+  {
+    logo: mysql,
+    title: "MySQL",
+    experience: "Experienced",
+  },
+  {
+    logo: mssql,
+    title: "MSSQL",
+    experience: "Experienced",
+  },
+  {
+    logo: python,
+    title: "Python",
+    experience: "Experienced",
+  },
+  {
+    logo: react,
+    title: "React",
+    experience: "Intermediate",
+  },
+  {
+    logo: sourcetree,
+    title: "SourceTree",
+    experience: "Experienced",
+  },
+  {
+    logo: java,
+    title: "Java",
+    experience: "Experienced",
+  },
+  {
+    logo: django,
+    title: "django",
+    experience: "Intermediate",
+  },
+  {
+    logo: php,
+    title: "php",
+    experience: "Intermediate",
+  },
+];
 
 const Experience = () => {
   return (
@@ -8,87 +118,19 @@ const Experience = () => {
       <h5>What Skills I have</h5>
       <h2>Skills</h2>
 
-      <div className="container experience__container">
-        <div className="experience__frontend">
-          <h3>Frontend Development</h3>
-          <div className="experience__content">
+      <div className="container">
+        <div className="experience__content">
+          {skillLogo.map((cert, index) => (
             <article className="experience__details">
-              <FaCheckCircle className="experience__details-icon" />
-              <div>
-                <h4>HTML</h4>
-                <small className="text-light">Experienced</small>
-              </div>
+              <img
+                src={cert.logo}
+                alt={cert.title}
+                title={cert.title}
+                className="achv_img_size"
+              />
+              <h4>{cert.title}</h4>
             </article>
-            <article className="experience__details">
-              <FaCheckCircle className="experience__details-icon" />
-              <div>
-                <h4>CSS</h4>
-                <small className="text-light">Intermediate</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <FaCheckCircle className="experience__details-icon" />
-              <div>
-                <h4>JavaScript</h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <FaCheckCircle className="experience__details-icon" />
-              <div>
-                <h4>BootStrap</h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <FaCheckCircle className="experience__details-icon" />
-              <div>
-                <h4>React</h4>
-                <small className="text-light">Intermediate</small>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <div className="experience__backend">
-          <h3>Backend Development</h3>
-          <div className="experience__content">
-            <article className="experience__details">
-              <FaCheckCircle className="experience__details-icon" />
-              <div>
-                <h4>C#</h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <FaCheckCircle className="experience__details-icon" />
-              <div>
-                <h4>Java</h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <FaCheckCircle className="experience__details-icon" />
-              <div>
-                <h4>PHP</h4>
-                <small className="text-light">Intermediate</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <FaCheckCircle className="experience__details-icon" />
-              <div>
-                <h4>MySQL</h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <FaCheckCircle className="experience__details-icon" />
-              <div>
-                <h4>Python</h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
-          </div>
+          ))}
         </div>
       </div>
     </section>
