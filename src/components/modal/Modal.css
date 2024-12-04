@@ -8,6 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-y: auto;
 }
 
 .modal-content {
@@ -32,13 +33,33 @@ button {
   flex-grow: 1;
   padding-right: 15px;
   max-height: 70vh;
+  color: black;
+  padding-left: 18px;
+}
+
+.modal-body p {
+  text-align: left;
+}
+
+.modal-body h1 {
+  font-size: 1.5rem;
+}
+
+ol li {
+  text-align: left;
+  list-style-type: square;
+}
+
+ol li::marker {
+  color: rgb(0, 119, 135);
 }
 
 .modal-additional-content {
   padding-top: 10px;
 }
 
-.modal-overlay h2, .modal-overlay p {
+.modal-overlay h2,
+.modal-overlay p {
   color: black;
 }
 

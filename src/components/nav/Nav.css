@@ -32,3 +32,9 @@ nav a.active {
   background: #80a61f;
   color: var(--color-bg);
 }
+
+@media screen and (max-width: 1024px) {
+  nav a {
+    padding: 0.4rem;
+  }
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Modal.css"; // Add your modal styles here
 import { IoMdCloseCircleOutline } from "react-icons/io";
+import ReactMarkdown from "react-markdown";
 
 const Modal = ({ isOpen, onClose, data }) => {
   if (!isOpen) return null;
@@ -12,8 +13,7 @@ const Modal = ({ isOpen, onClose, data }) => {
           <IoMdCloseCircleOutline size={30} />
         </button>
         <div className="modal-body">
-          <h2>{data.title}</h2>
-          <p>{data.description}</p>
+          <ReactMarkdown>{data.description}</ReactMarkdown>
         </div>
       </div>
     </div>

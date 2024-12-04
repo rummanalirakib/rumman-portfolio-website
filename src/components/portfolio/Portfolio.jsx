@@ -4,7 +4,7 @@ import IMG1 from "../../assets/DLD Simulator.jpg";
 import IMG2 from "../../assets/mazegame.jpg";
 import IMG3 from "../../assets/onlineexam.jpg";
 import IMG4 from "../../assets/foodfinder.jpg";
-import IMG5 from "../../assets/magnificientcoxbazar.jpg";
+import IMG5 from "../../assets/plantandmanureonlineshop.png";
 import IMG6 from "../../assets/bookstore.jpg";
 import Modal from "../modal/Modal";
 
@@ -14,36 +14,48 @@ const data = [
     image: IMG1,
     title: "Digital Logic Design Simulator",
     github: "https://github.com/rummanalirakib/Digital-Logic-Design-Simulator",
+    readmefile:
+      "https://raw.githubusercontent.com/rummanalirakib/Digital-Logic-Design-Simulator/main/README.md",
   },
   {
     id: 2,
     image: IMG2,
-    title: "Maze Game",
+    title: "Maze Runner",
     github: "https://github.com/rummanalirakib/Maze-Runner",
+    readmefile:
+      "https://raw.githubusercontent.com/rummanalirakib/Maze-Runner/main/README.md",
   },
   {
     id: 3,
     image: IMG3,
     title: "Online Practice Exam",
     github: "https://github.com/rummanalirakib/OnlineExam",
+    readmefile:
+      "https://raw.githubusercontent.com/rummanalirakib/OnlineExam/main/README.md",
   },
   {
     id: 4,
     image: IMG4,
-    title: "Restaurant Finder",
+    title: "Food Finder",
     github: "https://github.com/rummanalirakib/FoodFinder",
+    readmefile:
+      "https://raw.githubusercontent.com/rummanalirakib/FoodFinder/main/README.md",
   },
   {
     id: 5,
     image: IMG5,
-    title: "Magnificient Coxsbazar",
-    github: "https://github.com/rummanalirakib/MagnificientCoxsBazar",
+    title: "Plant and Manure Online Shop",
+    github: "https://github.com/rummanalirakib/PlantandManureOnlineShopWebsite",
+    readmefile:
+      "https://raw.githubusercontent.com/rummanalirakib/PlantandManureOnlineShopWebsite/main/README.md",
   },
   {
     id: 6,
     image: IMG6,
     title: "Book Store Management System",
     github: "https://github.com/rummanalirakib/BookStore",
+    readmefile:
+      "https://raw.githubusercontent.com/rummanalirakib/BookStore/master/README.md",
   },
 ];
 
@@ -51,17 +63,7 @@ const Portfolio = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalData, setModalData] = useState({});
 
-  const openModalWithData = (data) => {
-    setModalData(data);
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
-
   useEffect(() => {
-    // Add the "no-scroll" class to the body when the modal is open
     if (isModalOpen) {
       document.body.classList.add("no-scroll");
       document.querySelector("nav").classList.add("disabled-button");
@@ -70,12 +72,33 @@ const Portfolio = () => {
       document.querySelector("nav").classList.remove("disabled-button");
     }
 
-    // Clean up by removing the class when the component unmounts or modal is closed
     return () => {
       document.body.classList.remove("no-scroll");
       document.querySelector("nav").classList.remove("disabled-button");
     };
   }, [isModalOpen]);
+
+  const fetchReadme = async (title, readmeLink) => {
+    try {
+      const response = await fetch(readmeLink);
+      if (!response.ok) {
+        throw new Error("Failed to fetch README.md");
+      }
+      const markdownContent = await response.text();
+
+      setModalData({
+        title: title,
+        description: markdownContent,
+      });
+      setIsModalOpen(true);
+    } catch (error) {
+      console.error("Error fetching README:", error);
+    }
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
 
   return (
     <section id="portfolio">
@@ -83,7 +106,7 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-        {data.map(({ id, image, title, github }) => (
+        {data.map(({ id, image, title, github, readmefile }) => (
           <article key={id} className="portfolio__item">
             <div className="portfolio__item-image">
               <img src={image} alt={title} />
@@ -94,12 +117,7 @@ const Portfolio = () => {
                 GitHub
               </a>
               <button
-                onClick={() =>
-                  openModalWithData({
-                    title: "Page 1 Data",
-                    description: "This is some data from Page 1.",
-                  })
-                }
+                onClick={() => fetchReadme(title, readmefile)}
                 className="btn details_button"
               >
                 Details
