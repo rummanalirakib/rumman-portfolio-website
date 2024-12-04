@@ -7,6 +7,7 @@ import IMG4 from "../../assets/foodfinder.jpg";
 import IMG5 from "../../assets/plantandmanureonlineshop.png";
 import IMG6 from "../../assets/bookstore.jpg";
 import Modal from "../modal/Modal";
+import { FaSpinner } from "react-icons/fa"; // Import spinner icon
 
 const data = [
   {
@@ -62,6 +63,7 @@ const data = [
 const Portfolio = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalData, setModalData] = useState({});
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     if (isModalOpen) {
@@ -79,6 +81,8 @@ const Portfolio = () => {
   }, [isModalOpen]);
 
   const fetchReadme = async (title, readmeLink) => {
+    setIsLoading(true); // Set loading state to true before fetching
+
     try {
       const response = await fetch(readmeLink);
       if (!response.ok) {
@@ -93,6 +97,8 @@ const Portfolio = () => {
       setIsModalOpen(true);
     } catch (error) {
       console.error("Error fetching README:", error);
+    } finally {
+      setIsLoading(false); // Set loading state to false after fetching is done
     }
   };
 
@@ -125,6 +131,14 @@ const Portfolio = () => {
             </div>
           </article>
         ))}
+
+        {/* Loading Spinner */}
+        {isLoading && (
+          <div className="loading-overlay">
+            <FaSpinner className="spinner-icon" />
+            <p>Loading...</p>
+          </div>
+        )}
 
         <Modal isOpen={isModalOpen} onClose={closeModal} data={modalData} />
       </div>

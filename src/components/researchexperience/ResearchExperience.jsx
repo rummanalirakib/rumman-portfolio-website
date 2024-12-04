@@ -5,6 +5,7 @@ import { FaGithub } from "react-icons/fa";
 import { MdOutlinePublishedWithChanges } from "react-icons/md";
 import remotesensingpaper from "../../assets/remotesensingsatelliteimage.pdf";
 import { GrView } from "react-icons/gr";
+import { FaSpinner } from "react-icons/fa"; // Import spinner icon
 
 const researchExperiences = [
   {
@@ -42,6 +43,7 @@ const researchExperiences = [
 const ResearchExperience = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalData, setModalData] = useState({});
+  const [isLoading, setIsLoading] = useState(false); // State to control loading
 
   useEffect(() => {
     if (isModalOpen) {
@@ -59,6 +61,8 @@ const ResearchExperience = () => {
   }, [isModalOpen]);
 
   const fetchReadme = async (readmeLink) => {
+    setIsLoading(true); // Set loading state to true before fetching
+
     try {
       const response = await fetch(readmeLink);
       if (!response.ok) {
@@ -72,6 +76,8 @@ const ResearchExperience = () => {
       setIsModalOpen(true);
     } catch (error) {
       console.error("Error fetching README:", error);
+    } finally {
+      setIsLoading(false); // Set loading state to false after fetching is done
     }
   };
 
@@ -133,6 +139,14 @@ const ResearchExperience = () => {
           </div>
         ))}
       </div>
+
+      {/* Loading Spinner */}
+      {isLoading && (
+        <div className="loading-overlay">
+          <FaSpinner className="spinner-icon" />
+          <p>Loading...</p>
+        </div>
+      )}
 
       {/* Modal Integration */}
       <Modal isOpen={isModalOpen} onClose={closeModal} data={modalData} />
