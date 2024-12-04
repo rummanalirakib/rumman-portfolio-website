@@ -121,7 +121,7 @@ const ResearchExperience = () => {
               )}
               {item.publishedLink && (
                 <a
-                  href={remotesensingpaper}
+                  href={item.publishedLink}
                   className="btn margin_related"
                   target="_blank"
                   rel="noopener noreferrer"
