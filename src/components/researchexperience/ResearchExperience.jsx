@@ -109,9 +109,9 @@ const ResearchExperience = () => {
               >
                 Details
               </button>
-              {item.viewpaper && (
+              {item.publishedLink && (
                 <a
-                  href={item.viewpaper}
+                  href={item.publishedLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn margin_related"
@@ -119,9 +119,9 @@ const ResearchExperience = () => {
                   <MdOutlinePublishedWithChanges /> Published Link
                 </a>
               )}
-              {item.publishedLink && (
+              {item.viewpaper && (
                 <a
-                  href={item.publishedLink}
+                  href={item.viewpaper}
                   className="btn margin_related"
                   target="_blank"
                   rel="noopener noreferrer"
