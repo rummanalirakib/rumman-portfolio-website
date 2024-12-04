@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/rumman-portfolio-website/static/css/main.47dd7201.css",
-    "main.js": "/rumman-portfolio-website/static/js/main.a298ab94.js",
+    "main.css": "/rumman-portfolio-website/static/css/main.7ada83f0.css",
+    "main.js": "/rumman-portfolio-website/static/js/main.0a2a93be.js",
     "static/media/plantandmanureonlineshop.png": "/rumman-portfolio-website/static/media/plantandmanureonlineshop.8a760f399b8c89cdaf14.png",
     "static/media/remotesensingsatelliteimage.pdf": "/rumman-portfolio-website/static/media/remotesensingsatelliteimage.cb21fafd10e74f9b36e2.pdf",
     "static/media/mazegame.jpg": "/rumman-portfolio-website/static/media/mazegame.6fd563372f18b0f3787e.jpg",
@@ -33,11 +33,11 @@
     "static/media/css.png": "/rumman-portfolio-website/static/media/css.5721a3928fe43de6baf8.png",
     "static/media/mysql.svg": "/rumman-portfolio-website/static/media/mysql.c88570bcc45e4d15aa2b92e17eef91dd.svg",
     "index.html": "/rumman-portfolio-website/index.html",
-    "main.47dd7201.css.map": "/rumman-portfolio-website/static/css/main.47dd7201.css.map",
-    "main.a298ab94.js.map": "/rumman-portfolio-website/static/js/main.a298ab94.js.map"
+    "main.7ada83f0.css.map": "/rumman-portfolio-website/static/css/main.7ada83f0.css.map",
+    "main.0a2a93be.js.map": "/rumman-portfolio-website/static/js/main.0a2a93be.js.map"
   },
   "entrypoints": [
-    "static/css/main.47dd7201.css",
-    "static/js/main.a298ab94.js"
+    "static/css/main.7ada83f0.css",
+    "static/js/main.0a2a93be.js"
   ]
 }
