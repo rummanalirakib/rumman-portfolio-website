@@ -45,12 +45,12 @@ button {
   font-size: 1.5rem;
 }
 
-ol li {
+.modal-content ol li, .modal-content ul li {
   text-align: left;
   list-style-type: square;
 }
 
-ol li::marker {
+.modal-content ol li::marker, .modal-content ul li::marker {
   color: rgb(0, 119, 135);
 }
 

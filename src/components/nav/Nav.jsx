@@ -6,8 +6,9 @@ import { MdEngineering } from "react-icons/md";
 import { GrProjects } from "react-icons/gr";
 import { LuMessageCircle } from "react-icons/lu";
 import { useState } from "react";
-import { MdOutlineRecommend } from "react-icons/md";
+// import { MdOutlineRecommend } from "react-icons/md";
 import { GiAchievement } from "react-icons/gi";
+import { GiArchiveResearch } from "react-icons/gi";
 
 const Nav = () => {
   const [activeNav, setActiveNav] = useState("#home");
@@ -43,18 +44,18 @@ const Nav = () => {
         <GrProjects />
       </a>
       <a
+        href="#researchexperience"
+        onClick={() => setActiveNav("#researchexperience")}
+        className={activeNav === "#researchexperience" ? "active" : ""}
+      >
+        <GiArchiveResearch />
+      </a>
+      <a
         href="#achievement"
         onClick={() => setActiveNav("#achievement")}
         className={activeNav === "#achievement" ? "active" : ""}
       >
         <GiAchievement />
-      </a>
-      <a
-        href="#testimonials"
-        onClick={() => setActiveNav("#testimonials")}
-        className={activeNav === "#testimonials" ? "active" : ""}
-      >
-        <MdOutlineRecommend />
       </a>
       <a
         href="#contact"
