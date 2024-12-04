@@ -89,7 +89,7 @@ const ResearchExperience = () => {
             <h3>{item.title}</h3>
             <p
               className={`add_margin ${
-                item.status === "published" ? "accepted_color" : "pending_color"
+                item.status === "Published" ? "accepted_color" : "pending_color"
               }`}
             >
               <strong>Status:</strong> {item.status}
