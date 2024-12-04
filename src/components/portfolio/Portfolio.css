@@ -28,6 +28,27 @@
   margin: 1.2rem 0 2rem;
 }
 
+.details_button {
+  margin-left: 0.5rem;
+  background: #80a61f;
+  color: black;
+  width: 6rem;
+  height: 3rem;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+.disabled-button {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.disabled-button:hover {
+  cursor: not-allowed;
+}
+
 
 /*** Media Queries (Medium Devices) **** */
 

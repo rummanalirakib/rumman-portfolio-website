@@ -121,7 +121,7 @@ const Experience = () => {
       <div className="container">
         <div className="experience__content">
           {skillLogo.map((cert, index) => (
-            <article className="experience__details">
+            <article key={index} className="experience__details">
               <img
                 src={cert.logo}
                 alt={cert.title}
