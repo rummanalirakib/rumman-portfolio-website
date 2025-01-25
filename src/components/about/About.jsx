@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import Myself from "../../assets/rumman_profile.jpg";
+import Myself from "../../assets/rumman_side_image.jpeg";
 
 const workexperience_data = [
   {
